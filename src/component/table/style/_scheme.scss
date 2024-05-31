@@ -17,30 +17,38 @@
       table {
         #{ns(cell)} {
           &--info {
-            @include color.background(contrast info, (legacy: $legacy));
+            @include color.text(default info, (legacy: $legacy));
           }
 
           &--error {
-            @include color.background(contrast error, (legacy: $legacy));
+            @include color.text(default error, (legacy: $legacy));
           }
 
           &--success {
-            @include color.background(contrast success, (legacy: $legacy));
+            @include color.text(default success, (legacy: $legacy));
           }
 
           &--warning {
-            @include color.background(contrast warning, (legacy: $legacy));
-          }
-
-          &--new {
-            @include color.background(contrast yellow-moutarde, (legacy: $legacy));
+            @include color.text(default warning, (legacy: $legacy));
           }
         }
 
         thead {
           #{ns(cell)} {
-            @include color.accentuate {
-              @include color.background(contrast accent, (legacy: $legacy));
+            &--info {
+              @include color.background(contrast info, (legacy: $legacy));
+            }
+
+            &--error {
+              @include color.background(contrast error, (legacy: $legacy));
+            }
+
+            &--success {
+              @include color.background(contrast success, (legacy: $legacy));
+            }
+
+            &--warning {
+              @include color.background(contrast warning, (legacy: $legacy));
             }
           }
 
@@ -57,8 +65,20 @@
 
         tbody {
           #{ns(cell)} {
-            @include color.accentuate {
-              @include color.background(alt accent, (legacy: $legacy));
+            &--info {
+              @include color.background(alt info, (legacy: $legacy));
+            }
+
+            &--error {
+              @include color.background(alt error, (legacy: $legacy));
+            }
+
+            &--success {
+              @include color.background(alt success, (legacy: $legacy));
+            }
+
+            &--warning {
+              @include color.background(alt warning, (legacy: $legacy));
             }
           }
 
